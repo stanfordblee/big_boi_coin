@@ -5,11 +5,11 @@ class BigBoiBlock:
     def __init__(self, index, proof_number, previous_hash, data, timestamp=None):
         """
         Args:
-            index—this keeps track of the position of the block within the blockchain;
-            proof_no—this is the number produced during the creation of a new block (called mining);
-            prev_hash—this refers to the hash of the previous block within the chain;
+            index — this keeps track of the position of the block within the blockchain;
+            proof_no — this is the number produced during the creation of a new block (called mining);
+            prev_hash — this refers to the hash of the previous block within the chain;
             data—this gives a record of all transactions completed, such as the quantity bought;
-            timestamp—this places a timestamp for the transactions.
+            timestamp — this places a timestamp for the transactions.
         """
         self.index = index
         self.proof_number = proof_number
@@ -25,9 +25,9 @@ class BigBoiBlock:
 class BigBoiBlockChain: 
     def __init__(self):
         """
-        chain—this variable keeps all blocks;
-        current_data—this variable keeps all the completed transactions in the block;
-        construct_genesis()—this method will take care of constructing the initial block.
+        chain — this variable keeps all blocks;
+        current_data — this variable keeps all the completed transactions in the block;
+        construct_genesis() — this method will take care of constructing the initial block.
         """
         self.chain = []
         self.current_data = []
